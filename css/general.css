@@ -1,0 +1,42 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+li:hover {
+    background-color: #FFD500;
+}
+
+.dropdown-menu {
+    top: 100%;
+    margin: 0;
+}
+
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+
+.sub-item:hover {
+    background-color: #FFD500;
+}
+
+body {
+    background: url(../img/header.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+footer {
+    opacity: 90%;
+}
+
+a {
+    text-decoration: none;
+}
