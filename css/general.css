@@ -4,25 +4,19 @@ html {
 }
 
 li:hover {
-    background-color: #FFD500;
+    background-color: #FDC500;
 }
-
-.dropdown-menu {
-    top: 100%;
-    margin: 0;
-}
-
-.dropdown-menu > li > a:hover:after {
-    text-decoration: underline;
-    transform: rotate(-90deg);
-} 
 
 .navbar-nav li:hover > ul.dropdown-menu {
     display: block;
 }
 
+ul.dropdown-menu:hover > .dropdown {
+    background-color: black;
+}
+
 .sub-item:hover {
-    background-color: #FFD500;
+    background-color: #FDC500;
 }
 
 body {
