@@ -3,10 +3,6 @@ html {
     position: relative;
 }
 
-li:hover {
-    background-color: #FDC500;
-}
-
 .navbar-nav li:hover > ul.dropdown-menu {
     display: block;
 }
@@ -15,9 +11,6 @@ ul.dropdown-menu:hover > .dropdown {
     background-color: black;
 }
 
-.sub-item:hover {
-    background-color: #FDC500;
-}
 
 body {
     background: url(../img/header.jpg) no-repeat center center fixed;
@@ -34,3 +27,4 @@ footer {
 a {
     text-decoration: none;
 }
+
