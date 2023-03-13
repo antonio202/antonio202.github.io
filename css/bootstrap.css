@@ -3888,7 +3888,7 @@ textarea.form-control-lg {
 }
 
 .nav-item:hover {
-  background-color: var(--bs-primary);
+  background-color: var(--bs-secondary);
 }
 
 .tab-content > .tab-pane {

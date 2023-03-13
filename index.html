@@ -2,6 +2,9 @@
 <html>
 
 <head>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/general.css" rel="stylesheet">
   <link href="css/all.css" rel="stylesheet">
@@ -14,24 +17,32 @@
 
 <body>
   <!--NAV-->
-  <nav class="mb-5 navbar navbar-expand-md navbar-light bg-light p-0">
-    <ul class="navbar-nav inline-block mx-auto row col-12 text-center bg-dark p-0 m-0">
-      <li class="nav-item active col-sm-12 col-md-12 col-lg-4 col-ex-4 ">
-        <a class="nav-link text-white" href="index.html" style="font-weight:bold">Inicio</a>
-      </li>
-      <li class="nav-item col-sm-12 col-md-12 col-lg-4 col-ex-4">
-        <a class="nav-link text-white" href="palas.html">Palas</a>
-      </li>
-      <li class="dropdown nav-item col-sm-12 col-md-12 col-lg-4 col-ex-4 p-0">
-        <a class="nav-link text-white" href="equipamiento.html">Equipamiento</a>
-        <ul class="dropdown-menu col-12 bg-primary p-0" aria-labelledby="navbarDropdownMenuLink">
-          <li class="bg-primary"><a class="dropdown-item col-12 sub-item text-white" href="equipamiento/zapatillas.html">Zapatillas</a></li>
-          <li class="bg-primary"><a class="dropdown-item col-12 sub-item text-white" href="equipamiento/accesorios.html">Accesorios</a></li>
-        </ul>
-      </li>
-    </ul>
+  
+  <nav class="mb-5 navbar navbar-expand-md navbar-light bg-dark p-0">
+    <button class="navbar-toggler bg-light p-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="w-100 navbar-nav text-center bg-dark p-0 m-0">
+        <li class="nav-item active col-sm-12 col-md-4 col-lg-4 col-ex-4">
+          <a class="nav-link text-white" href="../index.html" style="font-weight:bold">Inicio</a>
+        </li>
+        <li class="nav-item col-sm-12 col-md-4 col-lg-4 col-ex-4">
+          <a class="nav-link text-white" href="../palas.html">Palas</a>
+        </li>
+        <li class="dropdown nav-item col-sm-12 col-md-4 col-lg-4 col-ex-4 p-0">
+          <a class="nav-link text-white" href="../equipamiento.html">Equipamiento</a>
+          <ul class="dropdown-menu col-12 bg-primary p-0" aria-labelledby="navbarDropdownMenuLink">
+            <li class="bg-primary"><a class="dropdown-item col-12 sub-item text-white" href="../equipamiento/zapatillas.html">Zapatillas</a></li>
+            <li class="bg-primary"><a class="dropdown-item col-12 sub-item text-white" href="../equipamiento/accesorios.html">Accesorios</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </nav>
+
   <!--NAV-->
+
   <div class="p-4 container bg-dark text-white mt-3 mb-3 border-light rounded"
     style="opacity:80%;border-width: 1px;border-style: solid;">
     <h1 class="pt-2 pb-4 text-center">¡Bienvenido/a a nuestra página de reviews de equipamiento de pádel!</h1>
