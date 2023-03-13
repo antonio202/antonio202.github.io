@@ -9,3 +9,11 @@ function irAPagina(nombre){
         window.location.href = '../equipamiento/accesorios.html';
     }
 }
+
+function irAZapatillas(zapatilla){
+    window.location.href = '../equipamiento/zapatillas/'+zapatilla+'.html';
+}
+
+function irAAccesorios(accesorio){
+    window.location.href = '../equipamiento/accesorios/'+accesorio+'.html';
+}
