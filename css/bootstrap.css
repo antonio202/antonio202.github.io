@@ -253,6 +253,34 @@ h4, .h4 {
   }
 }
 
+@media (max-width: 768px) {
+  p {
+    font-size: 1.25rem;
+  }
+
+  h1{
+    font-size: 1.75rem;
+  }
+
+  h6{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 544px) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  h6{
+    font-size: 1.75rem;
+  }
+}
+
 h5, .h5 {
   font-size: 1.25rem;
 }
