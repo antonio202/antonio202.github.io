@@ -66,6 +66,17 @@
           <label>Comentario</label>
           <textarea id="comment" class="form-control"></textarea></label>
         </div>
+        <div>
+          <label>Puntuación: <span id="puntuacion">5</span><br>
+            <input type="range" list="mydata" min="0" max="5" value="5" default="5" oninput="mostrarPuntuacion(this.value)">
+            <datalist id="mydata">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </datalist>
+        </div>
         <button type="button" class="btn btn-primary mt-2 w-100" onclick="cajaComentarios();">Enviar</button>
       </form>
     </div>
