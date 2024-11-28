@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>QUIZ</h1>
+    </header>
+
+    <div class="container">
+        <section id="p0">
+            <h3>1 - ¿Está diseñado Google Sites para crear Wikis?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Sí.
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">No, pero es posible adaptarlo.
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">No, además es imposible usarlo para ese fin.
+            </label>
+            <label>
+                <input type="radio" value="4" name="p0" onclick="respuesta(0,this)">Sí y además ofrece varias funcionalidades para ello.
+            </label>
+        </section>
+
+        <section id="p1">
+            <h3>2 - ¿Es posible compartir una subpágina de un Google Site?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Sí.
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Sí, editando la opción de compartir.
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">No, no es posible.
+            </label>
+            <label>
+                <input type="radio" value="4" name="p1" onclick="respuesta(1,this)">Sí, pero es una opción de pago.
+            </label>
+        </section>
+
+        <section id="p2">
+            <h3>3 - ¿Se pueden crear foros con Google?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">No.
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Sí, mediante Google Groups.
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Sí, mediante Google Forum.
+            </label>
+            <label>
+                <input type="radio" value="4" name="p2" onclick="respuesta(2,this)">Sí, mediante Google Comunity.
+            </label>
+        </section>
+
+        <section id="p3">
+            <h3>4 - ¿Cómo se agrega un vídeo de YouTube a Google Sites?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">Mediante la opción de Insertar y después vídeo de YouTube (siendo una opción gratuita).
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">No es posible agregar vídeos a Google Sites.
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">Copiando la URL del vídeo y pegándolo en la página en un cuadro de texto.
+            </label>
+            <label>
+                <input type="radio" value="4" name="p3" onclick="respuesta(3,this)">Mediante la opción de Insertar y después vídeo de YouTube (siendo una opción de pago).
+            </label>
+        </section>
+
+        <section id="p4">
+            <h3>5 - ¿Cómo podemos ver la Vista previa?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">Mediante el icono de vista previa en el menú lateral.
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Mediante el icono de vista previa en el menú superior.
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">No podemos verlo desde el menú de edición.
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="respuesta(4,this)">Click en el botón Ver y después en Vista previa.
+            </label>
+        </section>
+
+        <button onclick="corregir()">CORREGIR</button>
+        <script src="script.js"></script>
+    </div>
+</body>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Juego de Google Sites</title>
+    <script>
+        function redirigir() {
+            // Redirige a otra página dentro del mismo proyecto
+            window.location.href = "./ahorcado/Ahorcado.html";
+        }
+    </script>
+    <style>
+        body {
+            background: rgb(31, 76, 85);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            /* Centrado horizontal */
+            align-items: center;
+            /* Centrado vertical */
+            height: 10vh;
+            /* Altura de la ventana */
+        }
+        
+        button {
+            background-color: rgb(0, 212, 255);
+            /* Fondo verde */
+            border: none;
+            /* Sin borde */
+            color: black;
+            /* Texto blanco */
+            padding: 10px 20px;
+            /* Relleno */
+            text-align: center;
+            /* Centrar texto */
+            text-decoration: none;
+            /* Sin subrayado */
+            display: inline-block;
+            /* Bloque en línea */
+            font-size: 16px;
+            /* Tamaño de fuente */
+            cursor: pointer;
+            /* Cursor de puntero */
+            border-radius: 10px;
+            /* Borde redondeado */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            /* Sombra */
+        }
+        
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bienvenidos al Juego de Google Sites!!</h1>
+    <div class="container">
+        <button id="continuar" onclick="alert('¡Haz clic en Aceptar para ir al primer juego espero que te diviertas y aprendas mucho!'); redirigir();">COMENZAR</button>
+    </div>
+</body>
+
+</html>
