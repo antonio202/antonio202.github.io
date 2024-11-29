@@ -68,30 +68,34 @@ function procesarClick() {
     if (contador === 2) {
         if (elemento1.parentNode.getAttribute('name') === elemento2.parentNode.getAttribute('name')) {
             document.getElementById('mensajeAcierto').style.display = 'block';
+            let texto = ""
             if (elemento2.parentNode.getAttribute('name') == 'calendar') {
-                document.getElementById('mensajeAcierto').textContent = "Este es el icono de Google Calendar, lo puedes agregar a los Google Sites.";
+                texto = "Este es el icono de Google Calendar, lo puedes agregar a los Google Sites.";
             } else if (elemento2.parentNode.getAttribute('name') == 'compartir') {
-                document.getElementById('mensajeAcierto').textContent = "Este es el icono para compartir tu Google Site.";
+                texto = "Este es el icono para compartir tu Google Site.";
             } else if (elemento2.parentNode.getAttribute('name') == 'configuracion') {
-                document.getElementById('mensajeAcierto').textContent = "Este es el icono para configurar tu Google Site.";
+                texto = "Este es el icono para configurar tu Google Site.";
             } else if (elemento2.parentNode.getAttribute('name') == 'cuadrotexto') {
-                document.getElementById('mensajeAcierto').textContent = "Este es el icono para agregar cuadros de texto a tu Google Site.";
+                texto = "Este es el icono para agregar cuadros de texto a tu Google Site.";
             } else if (elemento2.parentNode.getAttribute('name') == 'drive') {
-                document.getElementById('mensajeAcierto').textContent = "Este es el icono de Google Drive, que almacena elementos que se podrán agregar al Google Site.";
+                texto = "Este es el icono de Google Drive, que almacena elementos que se podrán agregar al Google Site.";
             } else if (elemento2.parentNode.getAttribute('name') == 'imagen') {
-                document.getElementById('mensajeAcierto').textContent = "Este es el icono para agregar imágenes al Google Site.";
+                texto = "Este es el icono para agregar imágenes al Google Site.";
             } else if (elemento2.parentNode.getAttribute('name') == 'pagina') {
-                document.getElementById('mensajeAcierto').textContent = "Este es el icono que usa Google Sites para las páginas.";
+                texto = "Este es el icono que usa Google Sites para las páginas.";
             } else if (elemento2.parentNode.getAttribute('name') == 'site') {
-                document.getElementById('mensajeAcierto').textContent = "Este es el icono de Google Sites.";
+                texto = "Este es el icono de Google Sites.";
             } else if (elemento2.parentNode.getAttribute('name') == 'youtube') {
-                document.getElementById('mensajeAcierto').textContent = "Este es el icono de YouTube, con el que podrás agregar vídeos a tu Google Site.";
+                texto = "Este es el icono de YouTube, con el que podrás agregar vídeos a tu Google Site.";
             }
             cont_aciertos++;
             setTimeout(match, 3000);
             if (cont_aciertos >= 9) {
                 document.getElementById('continuar').style.display = "inline";
             }
+            setTimeout(() => {
+                alert(texto);
+            }, 500);
         } else {
             document.getElementById('mensajeError').style.display = 'block';
             setTimeout(resetGuesses, 1000);
