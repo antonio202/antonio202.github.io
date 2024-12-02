@@ -89,13 +89,13 @@ function procesarClick() {
                 texto = "Este es el icono de YouTube, con el que podrás agregar vídeos a tu Google Site.";
             }
             cont_aciertos++;
-            setTimeout(match, 3000);
+            setTimeout(match, 1000);
             if (cont_aciertos >= 9) {
                 document.getElementById('continuar').style.display = "inline";
             }
             setTimeout(() => {
                 alert(texto);
-            }, 500);
+            }, 0);
         } else {
             document.getElementById('mensajeError').style.display = 'block';
             setTimeout(resetGuesses, 1000);
